@@ -7,7 +7,7 @@ export const getUsers = async () => {
 };
 
 //get users by id
-export const getUserById = async () => {
+export const getUserById = async (id) => {
   const response = await axiosInstance.get(`/users/${id}`);
   return response.data;
 };
